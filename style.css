@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Garamond', serif;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#quote-btn {
+    background: #ffc107;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+
+#quote-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+#quote-display {
+    font-size: 3.5em;
+    font-style: italic;
+    text-shadow: none;
+    max-width: 80%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#quote-display:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #000;
+    margin: 0 15px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+@media (max-width: 768px) {
+    #quote-btn {
+        font-size: 1.5em;
+    }
+    #quote-display {
+        font-size: 2.5em;
+    }
+}

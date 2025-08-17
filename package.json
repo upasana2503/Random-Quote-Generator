@@ -1,0 +1,15 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "A simple random quote generator.",
+  "main": "game.js",
+  "scripts": {
+    "start": "echo \"Open index.html in your browser to run the application.\" && exit 1"
+  },
+  "keywords": [
+    "quote",
+    "generator"
+  ],
+  "author": "",
+  "license": "ISC"
+}
